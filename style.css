@@ -6,6 +6,7 @@ table td {
 	padding: 15px;
 }
 table thead td {
+	text-align: center;
 	background-color: #54585d;
 	color: #ffffff;
 	font-weight: bold;

@@ -12,19 +12,19 @@ $pet = Pets::list();
 <h1>Pets</h1>
 
 <table border="1" cellpadding="5">
-<tr>
-	<th>ID</th>
-	<th>NAME</th>
-	<th>GENDER</th>
-	<th>BIRTHDATE</th>
-	<th>OWNER</th>
-	<th>EMAIL</th>
-	<th>ADDRESS</th>
-	<th>CONTACT</th>
-	<th colspan="2">EDIT INFO</th>
-</tr>
+<thead>
+	<td>ID</td>
+	<td>NAME</td>
+	<td>GENDER</td>
+	<td>BIRTHDATE</td>
+	<td>OWNER</td>
+	<td>EMAIL</td>
+	<td>ADDRESS</td>
+	<td>CONTACT</td>
+	<td colspan="2">EDIT INFO</td>
+</thead>
 <?php foreach ($pet as $pet): ?>
-<tr>
+<tbody>
 <td><?php echo $pet->getId(); ?></td>
 <td><?php echo $pet->getName(); ?></td>
 <td><?php echo $pet->getGender(); ?></td>
@@ -39,7 +39,7 @@ $pet = Pets::list();
 <td>
 	<a href="delete-pet.php?id=<?php echo $pet->getId(); ?>">DELETE</a>
 </td>
-</tr>
+</tbody>
 <?php endforeach ?>
 <tr>
 	<th colspan="5">

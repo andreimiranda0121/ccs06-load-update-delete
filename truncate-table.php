@@ -5,6 +5,7 @@ require "config.php";
 use App\Pets;
 
 try {
+	
 	Pets::clearTable();
 	echo "<li>Truncated table";
 
